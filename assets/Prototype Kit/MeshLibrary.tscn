@@ -1,0 +1,201 @@
+[gd_scene format=3 uid="uid://yvo7dqp3wfg0"]
+
+[ext_resource type="PackedScene" uid="uid://dnbb58i61cqlm" path="res://assets/Prototype Kit/Models/GLB format/column-low.glb" id="9_m8vif"]
+[ext_resource type="PackedScene" uid="uid://dpe6iljcdblbk" path="res://assets/Prototype Kit/Models/GLB format/column-rounded-low.glb" id="10_0iwey"]
+[ext_resource type="PackedScene" uid="uid://bcrojykj55r4f" path="res://assets/Prototype Kit/Models/GLB format/column-rounded.glb" id="11_vnb8h"]
+[ext_resource type="PackedScene" uid="uid://cw82k4i5y0isi" path="res://assets/Prototype Kit/Models/GLB format/column-triangle-low.glb" id="12_4gpud"]
+[ext_resource type="PackedScene" uid="uid://lv1k6j2ud1qw" path="res://assets/Prototype Kit/Models/GLB format/column-triangle.glb" id="13_6xhmp"]
+[ext_resource type="PackedScene" uid="uid://d2xvboqy7xujq" path="res://assets/Prototype Kit/Models/GLB format/column.glb" id="14_d2ict"]
+[ext_resource type="PackedScene" uid="uid://dt1762arp2qfh" path="res://assets/Prototype Kit/Models/GLB format/floor-diagonal.glb" id="28_inf1n"]
+[ext_resource type="PackedScene" uid="uid://0ee2qfmmwewx" path="res://assets/Prototype Kit/Models/GLB format/floor-small-diagonal.glb" id="29_yc8we"]
+[ext_resource type="PackedScene" uid="uid://bxqhso6ell30a" path="res://assets/Prototype Kit/Models/GLB format/floor-small-square.glb" id="30_or135"]
+[ext_resource type="PackedScene" uid="uid://c207ye5y1f5xn" path="res://assets/Prototype Kit/Models/GLB format/floor-square.glb" id="31_xngtu"]
+[ext_resource type="PackedScene" uid="uid://dkxkxankv1gcr" path="res://assets/Prototype Kit/Models/GLB format/floor-thick-corner-diagonal.glb" id="32_qicjh"]
+[ext_resource type="PackedScene" uid="uid://40uai8qelc11" path="res://assets/Prototype Kit/Models/GLB format/floor-thick-corner-round.glb" id="33_hxt0e"]
+[ext_resource type="PackedScene" uid="uid://b5hwy4xp0yghk" path="res://assets/Prototype Kit/Models/GLB format/floor-thick-corner-rounded.glb" id="34_bit5w"]
+[ext_resource type="PackedScene" uid="uid://6adkf6apfkag" path="res://assets/Prototype Kit/Models/GLB format/floor-thick.glb" id="35_uy0qt"]
+[ext_resource type="PackedScene" uid="uid://b27guhg2r82el" path="res://assets/Prototype Kit/Models/GLB format/shape-cube-half.glb" id="86_w1fu6"]
+[ext_resource type="PackedScene" uid="uid://cysd3ey3truob" path="res://assets/Prototype Kit/Models/GLB format/shape-cube-rounded.glb" id="87_s6mga"]
+[ext_resource type="PackedScene" uid="uid://lnpm6bi0vrpc" path="res://assets/Prototype Kit/Models/GLB format/shape-cube.glb" id="88_575li"]
+[ext_resource type="PackedScene" uid="uid://dwybxlys3qv2i" path="res://assets/Prototype Kit/Models/GLB format/shape-cylinder-detailed.glb" id="89_iuacc"]
+[ext_resource type="PackedScene" uid="uid://bxvn8khd1mtde" path="res://assets/Prototype Kit/Models/GLB format/shape-cylinder-half-detailed.glb" id="90_pqlsq"]
+[ext_resource type="PackedScene" uid="uid://b7eoih4du6f5p" path="res://assets/Prototype Kit/Models/GLB format/shape-cylinder-half.glb" id="91_bffbc"]
+[ext_resource type="PackedScene" uid="uid://cuh1xjwfgtday" path="res://assets/Prototype Kit/Models/GLB format/shape-cylinder.glb" id="92_0y3dm"]
+[ext_resource type="PackedScene" uid="uid://bg45i7onfkxph" path="res://assets/Prototype Kit/Models/GLB format/shape-hexagon-half.glb" id="93_1v2pn"]
+[ext_resource type="PackedScene" uid="uid://6ovskaqo0k78" path="res://assets/Prototype Kit/Models/GLB format/shape-hexagon.glb" id="94_enjyd"]
+[ext_resource type="PackedScene" uid="uid://lvk64gfb4ano" path="res://assets/Prototype Kit/Models/GLB format/shape-hollow-cylinder-detailed.glb" id="95_t508f"]
+[ext_resource type="PackedScene" uid="uid://ci3hfu2ahm665" path="res://assets/Prototype Kit/Models/GLB format/shape-hollow-cylinder-half-detailed.glb" id="96_xy8h1"]
+[ext_resource type="PackedScene" uid="uid://up4gofjt80if" path="res://assets/Prototype Kit/Models/GLB format/shape-hollow-cylinder-half.glb" id="97_8j3ax"]
+[ext_resource type="PackedScene" uid="uid://bycsbyvoh45h3" path="res://assets/Prototype Kit/Models/GLB format/shape-hollow-cylinder.glb" id="98_whebb"]
+[ext_resource type="PackedScene" uid="uid://c8cyemxveudu4" path="res://assets/Prototype Kit/Models/GLB format/shape-hollow-hexagon-half.glb" id="99_qviur"]
+[ext_resource type="PackedScene" uid="uid://5qagfma3efv7" path="res://assets/Prototype Kit/Models/GLB format/shape-hollow-hexagon.glb" id="100_76odr"]
+[ext_resource type="PackedScene" uid="uid://ccanpqc27eg85" path="res://assets/Prototype Kit/Models/GLB format/shape-slope.glb" id="101_1mxtq"]
+[ext_resource type="PackedScene" uid="uid://dd434q2gwcxhb" path="res://assets/Prototype Kit/Models/GLB format/shape-triangular-prism-low.glb" id="102_01trr"]
+[ext_resource type="PackedScene" uid="uid://cvtxcxh6xcngp" path="res://assets/Prototype Kit/Models/GLB format/shape-triangular-prism.glb" id="103_sg0k5"]
+[ext_resource type="PackedScene" uid="uid://if4enocn0y70" path="res://assets/Prototype Kit/Models/GLB format/stairs-diagonal-narrow.glb" id="104_sidbd"]
+[ext_resource type="PackedScene" uid="uid://sakfj61xoj7f" path="res://assets/Prototype Kit/Models/GLB format/stairs-diagonal-small-narrow.glb" id="105_plwwo"]
+[ext_resource type="PackedScene" uid="uid://dypm6wek24xyd" path="res://assets/Prototype Kit/Models/GLB format/stairs-diagonal-small.glb" id="106_0mopj"]
+[ext_resource type="PackedScene" uid="uid://x4ddg8bym1dg" path="res://assets/Prototype Kit/Models/GLB format/stairs-diagonal.glb" id="107_xcl8e"]
+[ext_resource type="PackedScene" uid="uid://dtm8i63nsqqga" path="res://assets/Prototype Kit/Models/GLB format/stairs-narrow.glb" id="108_0vaji"]
+[ext_resource type="PackedScene" uid="uid://dpi5vpc14qggi" path="res://assets/Prototype Kit/Models/GLB format/stairs-small-narrow.glb" id="109_tyiv2"]
+[ext_resource type="PackedScene" uid="uid://dhil2r5j8evi6" path="res://assets/Prototype Kit/Models/GLB format/stairs-small.glb" id="110_oj20w"]
+[ext_resource type="PackedScene" uid="uid://cc4iorllgq03r" path="res://assets/Prototype Kit/Models/GLB format/stairs.glb" id="111_af02c"]
+[ext_resource type="PackedScene" uid="uid://d0tke34ivd7pn" path="res://assets/Prototype Kit/Models/GLB format/wall-corner-low.glb" id="118_5k4gb"]
+[ext_resource type="PackedScene" uid="uid://br8cqgdkwjh5p" path="res://assets/Prototype Kit/Models/GLB format/wall-corner-rounded-low.glb" id="119_7xybx"]
+[ext_resource type="PackedScene" uid="uid://boxekfnu7dbdu" path="res://assets/Prototype Kit/Models/GLB format/wall-corner-rounded.glb" id="120_m53a1"]
+[ext_resource type="PackedScene" uid="uid://d2lnjv4fq6uv2" path="res://assets/Prototype Kit/Models/GLB format/wall-corner.glb" id="121_8f25m"]
+[ext_resource type="PackedScene" uid="uid://btvpp0gm62xmf" path="res://assets/Prototype Kit/Models/GLB format/wall-diagonal-low.glb" id="122_um3er"]
+[ext_resource type="PackedScene" uid="uid://wsongcpluud0" path="res://assets/Prototype Kit/Models/GLB format/wall-diagonal.glb" id="123_1jhim"]
+[ext_resource type="PackedScene" uid="uid://cxxfg0vsnu0v6" path="res://assets/Prototype Kit/Models/GLB format/wall-doorway-garage.glb" id="124_moqir"]
+[ext_resource type="PackedScene" uid="uid://cn40l7lxrclkg" path="res://assets/Prototype Kit/Models/GLB format/wall-doorway-round.glb" id="125_kaduk"]
+[ext_resource type="PackedScene" uid="uid://dtmtf3ea8q2d2" path="res://assets/Prototype Kit/Models/GLB format/wall-doorway-sliding.glb" id="126_xnooo"]
+[ext_resource type="PackedScene" uid="uid://bnsjhc01g0u1w" path="res://assets/Prototype Kit/Models/GLB format/wall-doorway-wide-sliding.glb" id="127_lxvo1"]
+[ext_resource type="PackedScene" uid="uid://b7g0ke70dvic3" path="res://assets/Prototype Kit/Models/GLB format/wall-doorway-wide.glb" id="128_aee6m"]
+[ext_resource type="PackedScene" uid="uid://bqfse3qimerjv" path="res://assets/Prototype Kit/Models/GLB format/wall-doorway.glb" id="129_avet2"]
+[ext_resource type="PackedScene" uid="uid://buhatt7wue54v" path="res://assets/Prototype Kit/Models/GLB format/wall-low.glb" id="130_00k84"]
+[ext_resource type="PackedScene" uid="uid://ctj0wbp3m0ig4" path="res://assets/Prototype Kit/Models/GLB format/wall-round-low.glb" id="131_pyx7g"]
+[ext_resource type="PackedScene" uid="uid://c5koun5lbukea" path="res://assets/Prototype Kit/Models/GLB format/wall-round.glb" id="132_6p5vj"]
+[ext_resource type="PackedScene" uid="uid://dbyaidadorh1j" path="res://assets/Prototype Kit/Models/GLB format/wall-window-barred-large.glb" id="133_sa3se"]
+[ext_resource type="PackedScene" uid="uid://dq7slb743e3yk" path="res://assets/Prototype Kit/Models/GLB format/wall-window-barred-medium.glb" id="134_iso2b"]
+[ext_resource type="PackedScene" uid="uid://y8pj82elngrl" path="res://assets/Prototype Kit/Models/GLB format/wall-window-barred-small.glb" id="135_xrqc8"]
+[ext_resource type="PackedScene" uid="uid://xlu8w7r3iect" path="res://assets/Prototype Kit/Models/GLB format/wall-window-cutout-large.glb" id="136_4ny5q"]
+[ext_resource type="PackedScene" uid="uid://bfm7irfwl7dsf" path="res://assets/Prototype Kit/Models/GLB format/wall-window-cutout-medium.glb" id="137_d2bhf"]
+[ext_resource type="PackedScene" uid="uid://di4s51niwph2o" path="res://assets/Prototype Kit/Models/GLB format/wall-window-cutout-small.glb" id="138_hj836"]
+[ext_resource type="PackedScene" uid="uid://br2mdkyedg631" path="res://assets/Prototype Kit/Models/GLB format/wall-window-large.glb" id="139_nypru"]
+[ext_resource type="PackedScene" uid="uid://cmruhx03cmafl" path="res://assets/Prototype Kit/Models/GLB format/wall-window-medium.glb" id="140_8duvq"]
+[ext_resource type="PackedScene" uid="uid://cvy24vsynmde7" path="res://assets/Prototype Kit/Models/GLB format/wall-window-small.glb" id="141_xe0s3"]
+[ext_resource type="PackedScene" uid="uid://ca0474cceya0k" path="res://assets/Prototype Kit/Models/GLB format/wall.glb" id="142_iewt4"]
+
+[node name="Node3D" type="Node3D" unique_id=248032720]
+
+[node name="column-low" parent="." unique_id=345915168 instance=ExtResource("9_m8vif")]
+
+[node name="column-rounded-low" parent="." unique_id=1573697381 instance=ExtResource("10_0iwey")]
+
+[node name="column-rounded" parent="." unique_id=1702048662 instance=ExtResource("11_vnb8h")]
+
+[node name="column-triangle-low" parent="." unique_id=919428540 instance=ExtResource("12_4gpud")]
+
+[node name="column-triangle" parent="." unique_id=365108492 instance=ExtResource("13_6xhmp")]
+
+[node name="column" parent="." unique_id=1543473284 instance=ExtResource("14_d2ict")]
+
+[node name="floor-diagonal" parent="." unique_id=1413911622 instance=ExtResource("28_inf1n")]
+
+[node name="floor-small-diagonal" parent="." unique_id=1925007645 instance=ExtResource("29_yc8we")]
+
+[node name="floor-small-square" parent="." unique_id=697792157 instance=ExtResource("30_or135")]
+
+[node name="floor-square" parent="." unique_id=726591525 instance=ExtResource("31_xngtu")]
+
+[node name="floor-thick-corner-diagonal" parent="." unique_id=1302985177 instance=ExtResource("32_qicjh")]
+
+[node name="floor-thick-corner-round" parent="." unique_id=65448171 instance=ExtResource("33_hxt0e")]
+
+[node name="floor-thick-corner-rounded" parent="." unique_id=2042625410 instance=ExtResource("34_bit5w")]
+
+[node name="floor-thick" parent="." unique_id=1851294226 instance=ExtResource("35_uy0qt")]
+
+[node name="shape-cube-half" parent="." unique_id=702896650 instance=ExtResource("86_w1fu6")]
+
+[node name="shape-cube-rounded" parent="." unique_id=822620126 instance=ExtResource("87_s6mga")]
+
+[node name="shape-cube" parent="." unique_id=388980553 instance=ExtResource("88_575li")]
+
+[node name="shape-cylinder-detailed" parent="." unique_id=255949256 instance=ExtResource("89_iuacc")]
+
+[node name="shape-cylinder-half-detailed" parent="." unique_id=1798548326 instance=ExtResource("90_pqlsq")]
+
+[node name="shape-cylinder-half" parent="." unique_id=1541036524 instance=ExtResource("91_bffbc")]
+
+[node name="shape-cylinder" parent="." unique_id=486667388 instance=ExtResource("92_0y3dm")]
+
+[node name="shape-hexagon-half" parent="." unique_id=105549075 instance=ExtResource("93_1v2pn")]
+
+[node name="shape-hexagon" parent="." unique_id=1683317977 instance=ExtResource("94_enjyd")]
+
+[node name="shape-hollow-cylinder-detailed" parent="." unique_id=1477719106 instance=ExtResource("95_t508f")]
+
+[node name="shape-hollow-cylinder-half-detailed" parent="." unique_id=208567343 instance=ExtResource("96_xy8h1")]
+
+[node name="shape-hollow-cylinder-half" parent="." unique_id=2073695322 instance=ExtResource("97_8j3ax")]
+
+[node name="shape-hollow-cylinder" parent="." unique_id=1032230597 instance=ExtResource("98_whebb")]
+
+[node name="shape-hollow-hexagon-half" parent="." unique_id=704285223 instance=ExtResource("99_qviur")]
+
+[node name="shape-hollow-hexagon" parent="." unique_id=1061691764 instance=ExtResource("100_76odr")]
+
+[node name="shape-slope" parent="." unique_id=1334287005 instance=ExtResource("101_1mxtq")]
+
+[node name="shape-triangular-prism-low" parent="." unique_id=2031191898 instance=ExtResource("102_01trr")]
+
+[node name="shape-triangular-prism" parent="." unique_id=832574424 instance=ExtResource("103_sg0k5")]
+
+[node name="stairs-diagonal-narrow" parent="." unique_id=925698477 instance=ExtResource("104_sidbd")]
+
+[node name="stairs-diagonal-small-narrow" parent="." unique_id=915019845 instance=ExtResource("105_plwwo")]
+
+[node name="stairs-diagonal-small" parent="." unique_id=933407538 instance=ExtResource("106_0mopj")]
+
+[node name="stairs-diagonal" parent="." unique_id=1151988596 instance=ExtResource("107_xcl8e")]
+
+[node name="stairs-narrow" parent="." unique_id=774626131 instance=ExtResource("108_0vaji")]
+
+[node name="stairs-small-narrow" parent="." unique_id=161296047 instance=ExtResource("109_tyiv2")]
+
+[node name="stairs-small" parent="." unique_id=671759932 instance=ExtResource("110_oj20w")]
+
+[node name="stairs" parent="." unique_id=1940849774 instance=ExtResource("111_af02c")]
+
+[node name="wall-corner-low" parent="." unique_id=763476227 instance=ExtResource("118_5k4gb")]
+
+[node name="wall-corner-rounded-low" parent="." unique_id=1111040627 instance=ExtResource("119_7xybx")]
+
+[node name="wall-corner-rounded" parent="." unique_id=351234099 instance=ExtResource("120_m53a1")]
+
+[node name="wall-corner" parent="." unique_id=711243529 instance=ExtResource("121_8f25m")]
+
+[node name="wall-diagonal-low" parent="." unique_id=1789534992 instance=ExtResource("122_um3er")]
+
+[node name="wall-diagonal" parent="." unique_id=2012048569 instance=ExtResource("123_1jhim")]
+
+[node name="wall-doorway-garage" parent="." unique_id=1319533942 instance=ExtResource("124_moqir")]
+
+[node name="wall-doorway-round" parent="." unique_id=456598491 instance=ExtResource("125_kaduk")]
+
+[node name="wall-doorway-sliding" parent="." unique_id=1639266017 instance=ExtResource("126_xnooo")]
+
+[node name="wall-doorway-wide-sliding" parent="." unique_id=901813442 instance=ExtResource("127_lxvo1")]
+
+[node name="wall-doorway-wide" parent="." unique_id=231042623 instance=ExtResource("128_aee6m")]
+
+[node name="wall-doorway" parent="." unique_id=622872197 instance=ExtResource("129_avet2")]
+
+[node name="wall-low" parent="." unique_id=429170208 instance=ExtResource("130_00k84")]
+
+[node name="wall-round-low" parent="." unique_id=1319316583 instance=ExtResource("131_pyx7g")]
+
+[node name="wall-round" parent="." unique_id=1654503796 instance=ExtResource("132_6p5vj")]
+
+[node name="wall-window-barred-large" parent="." unique_id=876542695 instance=ExtResource("133_sa3se")]
+
+[node name="wall-window-barred-medium" parent="." unique_id=662476571 instance=ExtResource("134_iso2b")]
+
+[node name="wall-window-barred-small" parent="." unique_id=164032023 instance=ExtResource("135_xrqc8")]
+
+[node name="wall-window-cutout-large" parent="." unique_id=754023676 instance=ExtResource("136_4ny5q")]
+
+[node name="wall-window-cutout-medium" parent="." unique_id=1622898032 instance=ExtResource("137_d2bhf")]
+
+[node name="wall-window-cutout-small" parent="." unique_id=623191314 instance=ExtResource("138_hj836")]
+
+[node name="wall-window-large" parent="." unique_id=643757121 instance=ExtResource("139_nypru")]
+
+[node name="wall-window-medium" parent="." unique_id=1534481233 instance=ExtResource("140_8duvq")]
+
+[node name="wall-window-small" parent="." unique_id=1490596297 instance=ExtResource("141_xe0s3")]
+
+[node name="wall" parent="." unique_id=1926067571 instance=ExtResource("142_iewt4")]
+
+[editable path="column-low"]

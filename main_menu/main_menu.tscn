@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://delm06n3qsl5a"]
+
+[ext_resource type="Script" uid="uid://c2pahdgbe7e7r" path="res://main_menu/main_menu.gd" id="1_oa53l"]
+
+[node name="MainMenu" type="Control" unique_id=1910559381]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oa53l")
+
+[node name="SingleplayerButton" type="Button" parent="." unique_id=344252996]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.0
+offset_top = 190.0
+offset_right = 61.0
+offset_bottom = 221.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SINGLEPLAYER
+"
+
+[connection signal="pressed" from="SingleplayerButton" to="." method="_on_singleplayer_button_pressed"]
