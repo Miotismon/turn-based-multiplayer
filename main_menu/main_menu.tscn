@@ -19,12 +19,29 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -61.0
-offset_top = 190.0
+offset_top = 129.0
 offset_right = 61.0
-offset_bottom = 221.0
+offset_bottom = 160.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "SINGLEPLAYER
 "
 
+[node name="HostButton" type="Button" parent="." unique_id=1951234435]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.0
+offset_top = 176.0
+offset_right = 61.0
+offset_bottom = 207.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "HOST
+"
+
 [connection signal="pressed" from="SingleplayerButton" to="." method="_on_singleplayer_button_pressed"]
+[connection signal="pressed" from="HostButton" to="." method="_on_host_button_pressed"]

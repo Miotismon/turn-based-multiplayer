@@ -14,8 +14,14 @@ config/name="TurnBasedMultiplayer"
 run/main_scene="uid://delm06n3qsl5a"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
+[autoload]
+
+Steamworks="*uid://ceds1ocxpuo08"
+SceneManager="*uid://cuwon5eqdd4gg"
+
 [debug]
 
+file_logging/enable_file_logging=true
 gdscript/warnings/untyped_declaration=1
 gdscript/warnings/unsafe_property_access=1
 gdscript/warnings/unsafe_method_access=1
@@ -25,6 +31,10 @@ gdscript/warnings/missing_await=1
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godotsteam/plugin.cfg")
 
 [layer_names]
 
@@ -37,4 +47,5 @@ window/stretch/aspect="expand"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

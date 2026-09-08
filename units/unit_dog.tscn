@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bvrs6mxky3lxq" path="res://units/unit.gd" id="1_k2vb6"]
 [ext_resource type="PackedScene" uid="uid://c80qincj3ia3f" path="res://assets/Prototype Kit/Models/GLB format/animal-dog.glb" id="2_ps2to"]
+[ext_resource type="PackedScene" uid="uid://cbqcfrsubf7na" path="res://assets/Prototype Kit/Models/GLB format/indicator-round-c.glb" id="3_ryvaq"]
 
 [node name="UnitDog" type="Node3D" unique_id=1115268763]
 script = ExtResource("1_k2vb6")
@@ -11,6 +12,16 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0
 
 [node name="torso" parent="animal-dog2/animal-dog/root" parent_id_path=PackedInt32Array(914740452, 1256040909) index="0" unique_id=234732499]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+
+[node name="ReadyIndicator" parent="." unique_id=435827994 instance=ExtResource("3_ryvaq")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+
+[node name="rotate-y" parent="ReadyIndicator/indicator-round-c" parent_id_path=PackedInt32Array(435827994, 411487231) index="0" unique_id=688827457]
+transform = Transform3D(-0.40928736, 0, 0.91240555, 0, 1, 0, -0.91240555, 0, -0.40928736, 0, 0, 0)
+
+[node name="AnimationPlayer" parent="ReadyIndicator" index="1" unique_id=523110442]
+autoplay = &"animation"
 
 [node name="DebugLabel" type="Label3D" parent="." unique_id=1439482240]
 unique_name_in_owner = true
@@ -22,3 +33,4 @@ text = "HP: x/x
 	"
 
 [editable path="animal-dog2"]
+[editable path="ReadyIndicator"]

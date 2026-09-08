@@ -1,7 +1,7 @@
 class_name World
 extends Node3D
 
-enum Gamemode {SINGLE, LOCALMULTI, REMOTEMULTI}
+enum Gamemode {SINGLE, MULTIPLAYER_HOST, MULTIPLAYER_CLIENT}
 
 enum TileState {EMPTY, OCCUPIED}
 
@@ -20,10 +20,28 @@ var hovered_tile_state: TileState = TileState.EMPTY
 @onready var grid_map: GridMap = %GridMap
 @onready var mouse_indicator_manager: MouseIndicatorManager = %MouseIndicatorManager
 @onready var unit_manager: UnitManager = %UnitManager
+@onready var multiplayer_spawner: MultiplayerSpawner = %MultiplayerSpawner
 
 
+## should be called before adding to scene tree
+func initialize(new_gamemode: Gamemode) -> void:
+	gamemode = new_gamemode
+
+func _ready() -> void:
+	Steamworks.host_created.connect(_on_steam_host_created)
+	
+	match gamemode:
+		Gamemode.SINGLE:
+			pass
+		Gamemode.MULTIPLAYER_HOST:
+			%MouseIndicatorMeshesLocal.queue_free()
+			Steamworks.host_lobby()
+		Gamemode.MULTIPLAYER_CLIENT:
+			%MouseIndicatorMeshesLocal.queue_free()
+			pass
 
 
+#region mouse input shenanigans
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		var mouse_button_event := event as InputEventMouseButton
@@ -63,15 +81,10 @@ func _physics_process(_delta: float) -> void:
 		mouse_indicator_manager.set_hovered_tile_state(hovered_tile_state)
 		
 		
-		
 	else:
 		#print("mouseh it nothing :(")
 		is_hovering_tile = false
 		mouse_indicator_manager.set_visibility(false)
-
-
-
-
 
 
 func _get_mouse_3d_ray_result() -> Dictionary:
@@ -82,3 +95,25 @@ func _get_mouse_3d_ray_result() -> Dictionary:
 	var query := PhysicsRayQueryParameters3D.create(ray_origin, ray_end)
 	var result: Dictionary = space_state.intersect_ray(query)
 	return result
+#endregion
+
+func _on_steam_host_created() -> void:
+	## setup authority stuff
+	#multiplayer_spawner.spawn_function = custom_spawn_function
+	
+	## spawn host indicator mesh
+	mouse_indicator_manager.spawn_indicator_meshes(multiplayer.get_unique_id())
+	
+	## connect to listen for client connections
+	multiplayer.peer_connected.connect(_on_multiplayer_peer_connected)
+
+## runs on host when client connects
+func _on_multiplayer_peer_connected(peer_id: int) -> void:
+	## spawn client indicator mesh
+	mouse_indicator_manager.spawn_indicator_meshes(peer_id)
+
+## gets called by host on clients when a custom MultiplayerSpawner.spawn() happens (it doesn't currently)
+#func custom_spawn_function(data) -> void:
+	#print("custom spawn function data: ", data)
+	#
+	#return 
