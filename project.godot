@@ -18,6 +18,7 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 
 Steamworks="*uid://ceds1ocxpuo08"
 SceneManager="*uid://cuwon5eqdd4gg"
+ToastParty="*uid://br6fxa5d8nix4"
 
 [debug]
 
@@ -34,7 +35,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godotsteam/plugin.cfg")
+enabled=PackedStringArray("res://addons/godotsteam/plugin.cfg", "res://addons/toastparty/plugin.cfg")
 
 [layer_names]
 

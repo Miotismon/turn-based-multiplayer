@@ -45,17 +45,17 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="." unique_id=447134618]
+unique_name_in_owner = true
+_spawnable_scenes = PackedStringArray("uid://bsfkh5pwmohyn")
+spawn_path = NodePath("../MouseIndicatorManager")
+
 [node name="MouseIndicatorManager" type="Node3D" parent="." unique_id=858660677]
 unique_name_in_owner = true
 script = ExtResource("4_fn3g3")
 
 [node name="MouseIndicatorMeshesLocal" parent="MouseIndicatorManager" unique_id=563134682 instance=ExtResource("5_sc4t8")]
 unique_name_in_owner = true
-
-[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="MouseIndicatorManager" unique_id=447134618]
-unique_name_in_owner = true
-_spawnable_scenes = PackedStringArray("uid://bsfkh5pwmohyn")
-spawn_path = NodePath("..")
 
 [node name="UnitManager" type="Node3D" parent="." unique_id=1230780874]
 unique_name_in_owner = true
@@ -72,4 +72,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2739873, 0, -9.364372)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1081200278]
 
-[connection signal="spawned" from="MouseIndicatorManager/MultiplayerSpawner" to="MouseIndicatorManager" method="_on_multiplayer_spawner_spawned"]
+[connection signal="spawned" from="MultiplayerSpawner" to="MouseIndicatorManager" method="_on_multiplayer_spawner_spawned"]

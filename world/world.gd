@@ -7,8 +7,8 @@ enum TileState {EMPTY, OCCUPIED}
 
 const MOUSE_RAY_LENGTH = 1000.0
 
-
 var gamemode: Gamemode = Gamemode.SINGLE
+var player_count: int = 1
 
 var turn_number: int = 1
 
@@ -48,16 +48,9 @@ func _input(event: InputEvent) -> void:
 		if mouse_button_event.button_index == MOUSE_BUTTON_LEFT and mouse_button_event.pressed == true:
 			if is_hovering_tile:
 				if unit_manager.selected_unit == null:
-					unit_manager.try_select_unit(hovered_tile)
-					if unit_manager.selected_unit:
-						mouse_indicator_manager.set_mode(MouseIndicatorManager.Mode.MOVE)
+					unit_manager.try_select_unit(hovered_tile, multiplayer.get_unique_id())
 				else: 
-					unit_manager.try_move_selected_unit(hovered_tile)
-					if unit_manager.selected_unit == null:
-						mouse_indicator_manager.set_mode(MouseIndicatorManager.Mode.HOVER)
-				
-				if unit_manager.did_all_units_end_turn():
-					unit_manager.next_turn()
+					unit_manager.try_move_selected_unit(hovered_tile, multiplayer.get_unique_id())
 
 
 func _physics_process(_delta: float) -> void:
@@ -97,6 +90,8 @@ func _get_mouse_3d_ray_result() -> Dictionary:
 	return result
 #endregion
 
+
+#region multiplayer connection
 func _on_steam_host_created() -> void:
 	## setup authority stuff
 	#multiplayer_spawner.spawn_function = custom_spawn_function
@@ -109,6 +104,7 @@ func _on_steam_host_created() -> void:
 
 ## runs on host when client connects
 func _on_multiplayer_peer_connected(peer_id: int) -> void:
+	player_count += 1
 	## spawn client indicator mesh
 	mouse_indicator_manager.spawn_indicator_meshes(peer_id)
 
@@ -117,3 +113,4 @@ func _on_multiplayer_peer_connected(peer_id: int) -> void:
 	#print("custom spawn function data: ", data)
 	#
 	#return 
+#endregion

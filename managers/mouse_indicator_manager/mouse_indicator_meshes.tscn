@@ -4,9 +4,11 @@
 [ext_resource type="ArrayMesh" uid="uid://dlski3ci6ogfw" path="res://assets/Prototype Kit/Models/Meshes/indicator-square-a.mesh" id="2_x62hn"]
 [ext_resource type="ArrayMesh" uid="uid://gpph5rbiob6e" path="res://assets/Prototype Kit/Models/Meshes/indicator-square-e.mesh" id="3_irste"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7l3w7"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6yia"]
+resource_local_to_scene = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sc4t8"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x62hn"]
+resource_local_to_scene = true
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_7l3w7"]
 properties/0/path = NodePath("SelectedSquareIndicator:position")
@@ -34,13 +36,13 @@ script = ExtResource("1_7l3w7")
 [node name="SelectedSquareIndicator" type="MeshInstance3D" parent="." unique_id=155198929]
 unique_name_in_owner = true
 mesh = ExtResource("2_x62hn")
-surface_material_override/0 = SubResource("StandardMaterial3D_7l3w7")
+surface_material_override/0 = SubResource("StandardMaterial3D_h6yia")
 
 [node name="MoveSquareIndicator" type="MeshInstance3D" parent="." unique_id=2002642248]
 unique_name_in_owner = true
 visible = false
 mesh = ExtResource("3_irste")
-surface_material_override/0 = SubResource("StandardMaterial3D_sc4t8")
+surface_material_override/0 = SubResource("StandardMaterial3D_x62hn")
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="." unique_id=1310964895]
 replication_config = SubResource("SceneReplicationConfig_7l3w7")
