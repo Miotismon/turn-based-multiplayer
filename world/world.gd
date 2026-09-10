@@ -77,7 +77,7 @@ func _physics_process(_delta: float) -> void:
 	else:
 		#print("mouseh it nothing :(")
 		is_hovering_tile = false
-		mouse_indicator_manager.set_visibility(false)
+		#mouse_indicator_manager.set_visibility(false)
 
 
 func _get_mouse_3d_ray_result() -> Dictionary:
@@ -114,3 +114,7 @@ func _on_multiplayer_peer_connected(peer_id: int) -> void:
 	#
 	#return 
 #endregion
+
+
+func _on_invite_button_pressed() -> void:
+	Steam.activateGameOverlay("LobbyInvite")

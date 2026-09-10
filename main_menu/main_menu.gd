@@ -1,8 +1,6 @@
 extends Control
 
 
-
-
 func _on_singleplayer_button_pressed() -> void:
 	get_tree().change_scene_to_packed(SceneManager.WORLD_PACKED_SCENE)
 

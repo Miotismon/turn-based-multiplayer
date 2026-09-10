@@ -32,7 +32,7 @@ shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1235043208]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 0.25881904, 0.9659259, 0, -0.9659259, 0.25881904, 10, 15, -5)
+transform = Transform3D(1, 0, 0, 0, 0.25881904, 0.9659259, 0, -0.9659259, 0.25881904, 10.5, 16, -3)
 script = ExtResource("1_tcf2h")
 
 [node name="GridMap" type="GridMap" parent="." unique_id=595404672]
@@ -72,4 +72,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2739873, 0, -9.364372)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1081200278]
 
+[node name="InviteButton" type="Button" parent="CanvasLayer" unique_id=1979758979]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Invite
+"
+
 [connection signal="spawned" from="MultiplayerSpawner" to="MouseIndicatorManager" method="_on_multiplayer_spawner_spawned"]
+[connection signal="pressed" from="CanvasLayer/InviteButton" to="." method="_on_invite_button_pressed"]
