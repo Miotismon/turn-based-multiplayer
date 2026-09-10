@@ -10,17 +10,17 @@ script = ExtResource("1_k2vb6")
 [node name="animal-dog2" parent="." unique_id=914740452 instance=ExtResource("2_ps2to")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
 
-[node name="torso" parent="animal-dog2/animal-dog/root" parent_id_path=PackedInt32Array(914740452, 1256040909) index="0" unique_id=234732499]
+[node name="torso" parent="animal-dog2/animal-dog/root" parent_id_path=PackedInt32Array(914740452, 470755507) index="0" unique_id=1514074340]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 
 [node name="ReadyIndicator" parent="." unique_id=435827994 instance=ExtResource("3_ryvaq")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 
-[node name="rotate-y" parent="ReadyIndicator/indicator-round-c" parent_id_path=PackedInt32Array(435827994, 411487231) index="0" unique_id=688827457]
+[node name="rotate-y" parent="ReadyIndicator/indicator-round-c" parent_id_path=PackedInt32Array(435827994, 550929846) index="0" unique_id=894631668]
 transform = Transform3D(-0.40928736, 0, 0.91240555, 0, 1, 0, -0.91240555, 0, -0.40928736, 0, 0, 0)
 
-[node name="AnimationPlayer" parent="ReadyIndicator" index="1" unique_id=523110442]
+[node name="AnimationPlayer" parent="ReadyIndicator" index="1" unique_id=1788637128]
 autoplay = &"animation"
 
 [node name="DebugLabel" type="Label3D" parent="." unique_id=1439482240]
